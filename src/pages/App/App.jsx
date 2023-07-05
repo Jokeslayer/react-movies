@@ -9,7 +9,7 @@ import ActorListPage from '../ActorListPage/ActorListPage';
 import NavBar from '../../components/NavBar/NavBar';
 
 export default function App() {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState(null);
 
   return (
     <main className="App">
@@ -18,14 +18,19 @@ export default function App() {
             <NavBar />
             <Routes>
               {/* Route components in here */}
-              <Route path="/login" element={<LoginPage/>} />
-              <Route path="/movies/list" element={<MoviesListPage/>} />
-              <Route path="/movies/detail" element={<MovieDetailPage/>} />
-              <Route path="/actor/list" element={<ActorListPage/>} />
+              <Route path="/" element={<MoviesListPage/>} />
+              <Route path="/movies/detail" element={<MoviesDetailPage/>} />
+              <Route path="/actors" element={<ActorListPage/>} />
             </Routes>
           </>
           :
-          <AuthPage />
+          <>
+            <NavBar />
+            <Routes>
+              {/* Route components in here */}
+              <Route path="/" element={<LoginPage/>} />
+            </Routes>
+          </>
       }
     </main>
   );
