@@ -9,9 +9,9 @@ export default function MovieDetailPage({movies}) {
 
   return (
     <div className="flex">
-      <div>
+      <div className="content">
         <h1>{movie.title}</h1>
-        <h4>Released: {new Date(movie.release_date).toLocaleDateString()}</h4>
+        <h4>Released: {new Date(movie.releaseDate).toLocaleDateString()}</h4>
         <h3>Cast Members:</h3>
         <ul>
           {
@@ -21,7 +21,9 @@ export default function MovieDetailPage({movies}) {
           }
         </ul>
       </div>
-      <img src={`${movie.poster_path}`} alt=""/>
+      <div className="poster">
+        <img src={`${movie.posterPath}`} alt="" />
+      </div>
     </div>
   )
 }

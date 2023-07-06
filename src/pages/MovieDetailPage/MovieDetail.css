@@ -4,9 +4,20 @@
     margin-top: 20px;
   }
   
-  .flex div {
+  .content {
     margin: 0 10%;
     text-align: left;
+    border: solid black;
+    width: 50vh;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .poster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
   }
   
   h1 {

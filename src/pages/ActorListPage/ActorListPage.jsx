@@ -1,4 +1,3 @@
-import "./ActorPage.css";
 import ActorCard from "../../components/ActorCard/ActorCard";
 
 export default function ActorPage({ movies }) {

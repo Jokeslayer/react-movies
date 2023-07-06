@@ -42,3 +42,8 @@
     color: #fff;
     outline: 0;
   }
+
+  p {
+    font-size: 24pt;
+    font-weight: bolder;
+  }

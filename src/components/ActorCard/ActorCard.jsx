@@ -1,4 +1,5 @@
-import "../../pages/MoviePage/MovieList.css";
+import "/home/aschwartz/code/react-movies/src/pages/MoviesListPage/MoviesList.css";
+
 
 function getRandomNumber(min, max) {
   return Math.round(Math.random() * (max - min) + min);

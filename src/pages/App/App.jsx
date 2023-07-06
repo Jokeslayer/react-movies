@@ -17,14 +17,14 @@ export default function App() {
         <>
           <NavBar user={user} />
           <Routes>
-            {/* Route components in here */}
+
             <Route path="/" element={<MoviesListPage movies={movies} />} />
             <Route path="/movies/:movieName" element={<MovieDetailPage movies={movies} />} />
             <Route path="/actors" element={<ActorListPage movies={movies} />} />
           </Routes>
         </>
       ) : (
-        <SignupPage setUser={setUser} />
+        <LoginPage setUser={setUser} />
       )}
     </main>
   );
